@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+
+	"name": "Anti YouTube Ads",
+	"description": "Refresh the YouTube page if sees ads.",
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.youtube.com/watch*"],
+			"js": ["jquery-1.11.3.min.js", "youtube.js"]
+		}
+	]
+}
